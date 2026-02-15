@@ -160,7 +160,7 @@ Language: Arabic (primary) with light English technical terms.
 ### Frontend
 
 - لا يوجد تطبيق Frontend جاهز بعد.
-- المجلد الحالي [basic frontend no framwork/](basic%20frontend%20no%20framwork/) فارغ، وسيتم تنفيذ الـ Frontend باستخدام **Next.js** (يفضّل إنشاء مجلد مستقل مثل `frontend/` لتطبيق Next.js).
+- المجلد الحالي (basic%20frontend%20no%20framwork/) فارغ، وسيتم تنفيذ الـ Frontend باستخدام **Next.js** (يفضّل إنشاء مجلد مستقل مثل `frontend/` لتطبيق Next.js).
 
 **الخلاصة:** لم يبدأ تنفيذ الدومين (Shows/Seats/Bookings) بعد.
 
@@ -285,3 +285,4 @@ Language: Arabic (primary) with light English technical terms.
 **Next Vision Team**
 
 </div>
+
