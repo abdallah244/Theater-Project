@@ -3,7 +3,7 @@ This document is designed to look good on GitHub.
 Language: Arabic (primary) with light English technical terms.
 -->
 
-# Theater Seat Booking Website (Mobile-Friendly)
+# Theater Seat Booking Website (NestJS + Next.js)
 
 **اسم المشروع:** موقع ويب لحجز مقاعد عروض مسرح الأطفال وعروض السيرك (مناسب للموبايل)
 
@@ -15,7 +15,7 @@ Language: Arabic (primary) with light English technical terms.
 
 ## جدول المحتويات
 
-- [Theater Seat Booking Website (Mobile-Friendly)](#theater-seat-booking-website-mobile-friendly)
+- [Theater Seat Booking Website (NestJS + Next.js)](#theater-seat-booking-website-nestjs--nextjs)
   - [جدول المحتويات](#جدول-المحتويات)
   - [1) الهدف والنتيجة المتوقعة](#1-الهدف-والنتيجة-المتوقعة)
   - [2) نطاق العمل (Scope)](#2-نطاق-العمل-scope)
@@ -40,7 +40,7 @@ Language: Arabic (primary) with light English technical terms.
   - [9) خطة 14 يوم (تفصيل يومي)](#9-خطة-14-يوم-تفصيل-يومي)
   - [10) توزيع الأدوار](#10-توزيع-الأدوار)
   - [11) المخاطر وخطة التعامل](#11-المخاطر-وخطة-التعامل)
-  - [12) اجتماع الفريق](#12-اجتماع-الفريق)
+  - [12) المتابعة والحوكمة](#12-المتابعة-والحوكمة)
 
 ---
 
@@ -159,7 +159,8 @@ Language: Arabic (primary) with light English technical terms.
 
 ### Frontend
 
-- مجلد [basic frontend no framwork/](basic%20frontend%20no%20framwork/) فارغ حاليًا.
+- لا يوجد تطبيق Frontend جاهز بعد.
+- المجلد الحالي [basic frontend no framwork/](basic%20frontend%20no%20framwork/) فارغ، وسيتم تنفيذ الـ Frontend باستخدام **Next.js** (يفضّل إنشاء مجلد مستقل مثل `frontend/` لتطبيق Next.js).
 
 **الخلاصة:** لم يبدأ تنفيذ الدومين (Shows/Seats/Bookings) بعد.
 
@@ -170,7 +171,7 @@ Language: Arabic (primary) with light English technical terms.
 ### 7.1 التقنية (متوافقة مع الريبو)
 
 - Backend: NestJS.
-- Frontend: Vanilla HTML/CSS/JS (بدون Framework).
+- Frontend: Next.js.
 - Database: PostgreSQL أو MySQL.
 - ORM: Prisma أو TypeORM.
 
@@ -243,9 +244,9 @@ Language: Arabic (primary) with light English technical terms.
 |     3 | APIs: Shows + Layout + Pricing + Seats view                  |
 |     4 | Booking creation + منع التكرار (Transactions + Unique)       |
 |     5 | Admin Auth (JWT) + فتح/قفل الحجز                             |
-|     6 | Frontend: صفحات (Shows list / Show details)                  |
-|     7 | Frontend: رسم خريطة المقاعد + اختيار متعدد + إجمالي السعر    |
-|     8 | Frontend: Form ولي الأمر + إرسال الحجز + صفحة تأكيد          |
+|     6 | Next.js: صفحات (Shows list / Show details)                   |
+|     7 | Next.js: رسم خريطة المقاعد + اختيار متعدد + إجمالي السعر     |
+|     8 | Next.js: Form ولي الأمر + إرسال الحجز + صفحة تأكيد           |
 |     9 | الدفع (تكامل إن أمكن) أو مسار يدوي + شاشة تعليمات            |
 |    10 | Admin UI بسيط: إدارة العروض + التخطيط + التسعير + الحجوزات   |
 |    11 | اختبارات + حالات الحافة (حجز متزامن/إغلاق الحجز/مقاعد مخفية) |
@@ -258,7 +259,7 @@ Language: Arabic (primary) with light English technical terms.
 ## 10) توزيع الأدوار
 
 - Backend: DB + APIs + Transactions + Auth + (Webhooks للدفع لو موجود).
-- Frontend: Seat map UI + صفحات الحجز + Admin UI بسيط.
+- Frontend (Next.js): Seat map UI + صفحات الحجز + Admin UI بسيط.
 - QA/PM: سيناريوهات الاختبار + متابعة التقدم يوميًا.
 
 ---
@@ -273,22 +274,9 @@ Language: Arabic (primary) with light English technical terms.
 
 ---
 
-## 12) اجتماع الفريق
+## 12) المتابعة والحوكمة
 
-**مطلوب:** تحديد وقت غدًا لاجتماع 20–30 دقيقة لتوزيع المهام.
-
-**اقتراحات وقت (اختاروا واحد):**
-
-- 11:00 صباحًا
-- 02:00 ظهرًا
-- 06:00 مساءً
-
-**أجندة الاجتماع:**
-
-- تثبيت الـ MVP النهائي
-- تقسيم المسؤوليات
-- قرار الدفع (Integration vs Manual)
-- اتفاق على Daily Standup (10 دقائق)
+سيتم عقد اجتماع فريق (Check-in) من قبل **مهندس عبدالله هاني** للتأكد من السير في المسار الصحيح للمشروع، وأنه لا توجد مشاكل أو عوائق مؤثرة على خطة الـ 14 يوم.
 
 ---
 
